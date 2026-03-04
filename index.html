@@ -1,10 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Web Page</title>
+  <meta charset="UTF-8">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+  <title>My Portfolio</title>
+  
+  
+  <link rel="stylesheet" href="styles.css">
+ 
+  
+  <style>
+
+  </style>
 </head>
+
 <body>
-  <h1>Hello World</h1>
-  <p>This is my first GitHub project.</p>
+  <!-- 
+    <body> contains all the visible content of the webpage
+    Everything users see goes inside this tag
+  -->
+
+  <!-- NAVIGATION SECTION -->
+  <!-- <nav> is a semantic tag for navigation links -->
+  <nav class="navbar">
+    <div class="container">
+      <!-- <div> is a generic container for grouping elements -->
+      <!-- "container" class helps align content in the middle -->
+      
+      <div class="logo">
+        <!-- Logo/brand name on the left -->
+        <h1>My Portfolio</h1>
+        <!-- <h1> is the main heading (largest) - use only ONE per page -->
+      </div>
+
+      <ul class="nav-links">
+        <!-- <ul> means "unordered list" (bullet points) -->
+        <!-- <li> means "list item" -->
+        
+        <li><a href="index.html">Home</a></li>
+        <!-- <a> tag creates a link (clickable text) -->
+        <!-- href="index.html" tells where to go when clicked -->
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER/HERO SECTION -->
+  <!-- <header> is a semantic tag for the top section of a page -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Welcome to My Portfolio!</h1>
+        <!-- Main heading -->
+        
+        <p>I'm a Software Developer!</p>
+        <!-- <p> means "paragraph" - used for text content -->
+        
+        <button onclick="handleButtonClick()">Let's Go</button>
+        <!-- <button> creates a clickable button -->
+        <!-- onclick="handleButtonClick()" runs JavaScript function when clicked -->
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT SECTION -->
+  <!-- <main> is a semantic tag for the main content of the page -->
+  <main>
+    <section class="about">
+      <!-- <section> groups related content together -->
+      
+      <div class="container">
+        <h2>About Me</h2>
+        <!-- <h2> is a subheading (second level) -->
+        
+        <p>
+          Hi! I'm a futuristic Software Developer. I hope that you shound like my portfolio.Here I show my coding jurney.
+        </p>
+
+        <div class="skills">
+          <h3>Skills I'm Learning</h3>
+          <!-- <h3> is a third-level heading -->
+          
+          <ul>
+            <li>HTML - Structure of websites</li>
+            <li>CSS - Styling and design</li>
+            <li>JavaScript - Making websites interactive</li>
+            <li>Java - Logic Building</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+      <div class="container">
+        <h2>  How to learn Web Development?</h2>
+
+        <div class="feature-grid">
+          <!-- <div class="feature-grid"> creates a container for multiple cards -->
+          
+          <div class="feature-card">
+            <!-- Each card represents one feature -->
+            <h3>📱 Responsive Design</h3>
+            <p>
+              Builds websites that work on all devices:
+              phones, tablets, and computers
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>🎨 Creative Freedom</h3>
+            <p>
+              Design beautiful and unique websites
+              with your own style and creativity
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>💼 Career Opportunities</h3>
+            <p>
+              Web development is in high demand and
+              offers great job opportunities
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <!-- <footer> is a semantic tag for the bottom section of a page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+      <!-- &copy; is an HTML entity that displays the © symbol -->
+      
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <!-- Multiple <a> tags in footer for additional links -->
+        
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT SECTION -->
+  <script src="script.js"></script>
+  <!-- <script src=""> links external JavaScript file -->
+  <!-- You can also write JavaScript directly here using <script></script> -->
+  
+  <script>
+    // Simple inline JavaScript for demonstration
+    console.log("Page loaded successfully!");
+    // console.log() prints messages to browser console (press F12 to see)
+  </script>
+
 </body>
+
 </html>
